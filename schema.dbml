@@ -1,0 +1,30 @@
+Table personal [headercolor: #175e7a] {
+	id integer [ pk, increment, not null ]
+	nombre ""
+	"" ""
+	"" ""
+	"" ""
+	"" ""
+	"" ""
+	"" ""
+	"" ""
+	"" ""
+	"" ""
+}
+
+Table data_airhsp [headercolor: #175e7a] {
+	id integer [ pk, increment, not null ]
+}
+
+Table contratos [headercolor: #175e7a] {
+	id integer [ pk, increment, not null ]
+	personal_id bigint
+	regimen_laboral_id bigint
+	tipo_contrato_id bigint
+	numero_contrato varchar(50)
+	fecha_contrato date
+	fecha_inicio date
+	fecha_fin date
+	estado_contrato_id bigint
+	observaciones text
+}
